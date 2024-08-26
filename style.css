@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    background-image: url(/img/fundo-de-ficcao-cientifica-futurista-moderno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-color: black;
+    height: 500px;
+}
+.quadrado{
+    width: 500px;
+    height: 550px;
+    border: 3px solid #1d12e6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fb0f0f;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tarefas{
+   
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.tarefas input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.tarefas:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Leve destaque ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+@media (max-width: 600px) {
+    .quadrado {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+}
+input[type="checkbox"] {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #00ff00; /* Cor de fundo ao marcar */
+    transform: scale(1.1); /* Aumenta o tamanho ao marcar */
+}
+#contador {
+    margin-top: 20px; /* Espaçamento acima do contador */
+    font-size: 18px; /* Tamanho da fonte do contador */
+    color: #ffffff; /* Cor da fonte */
+}
